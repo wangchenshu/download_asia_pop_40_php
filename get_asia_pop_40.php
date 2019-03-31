@@ -3,7 +3,8 @@
 
     $base_url = 'http://asiapop40.com';
     $convert_base_url = 'https://youtubemp3music.info/@api/json/mp3/';
-    $download_dir = date('Ymd');
+    $today = date('Ymd');
+    $download_dir = 'asia_pop_40_' . $today;
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $base_url);

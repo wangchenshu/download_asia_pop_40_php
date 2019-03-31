@@ -1,11 +1,12 @@
 <?php
     include("./simplehtmldom_1_8_1/simple_html_dom.php");
-    
+
+    $base_url = 'http://asiapop40.com';
     $convert_base_url = 'https://youtubemp3music.info/@api/json/mp3/';
     $download_dir = date('Ymd');
     $ch = curl_init();
 
-    curl_setopt($ch, CURLOPT_URL, "http://asiapop40.com");
+    curl_setopt($ch, CURLOPT_URL, $base_url);
     curl_setopt($ch, CURLOPT_HEADER, false);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
